@@ -14,3 +14,12 @@ intents.message_content = True
 
 client = MyClient(intents=intents)
 client.run('my token goes here')
+
+
+#Teste
+import logging
+
+handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+
+# Assume client refers to a discord.Client subclass...
+client.run(token, log_handler=handler)
